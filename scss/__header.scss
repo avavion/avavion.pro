@@ -1,0 +1,64 @@
+.header {
+  &-img {
+    height: 100vh;
+    background-image: url("../assets/img/header-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -330px;
+    &--opacity {
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+  &-nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &-line {
+        display: none;
+        width: 30px;
+        height: 2px;
+        margin-bottom: 4px;
+        background-color: #fff;
+      }
+      &-item {
+        margin-right: 15px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    &__subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Tablet
+@media (max-width: 992px) and (min-width: 768px) {
+  :root {
+    --container: 760px;
+  }
+}
+// /Tablet
