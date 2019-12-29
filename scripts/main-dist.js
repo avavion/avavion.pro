@@ -1,1 +1,1 @@
-"use strict";console.log("Привет, мир!");
+"use strict";var burgerButton=document.getElementById("burger-btn"),menuList=document.getElementById("menu-list");burgerButton.addEventListener("click",function(){menuList.classList.toggle("header-nav__menu-list--active")});

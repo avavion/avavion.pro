@@ -13,7 +13,6 @@
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic"
 		rel="stylesheet">
-
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/5c55b6f969.js" crossorigin="anonymous"></script>
 	<!-- CSS -->
@@ -35,7 +34,7 @@
 						<!-- Nav logo -->
 						<div class="header-nav__logo nav__logo">
 							<h1 class="header-nav__logo-caption nav__logo-caption">
-								Алан Богов
+								Веб-разработка
 							</h1>
 						</div>
 						<!-- /Nav logo -->
@@ -44,37 +43,25 @@
 						<div class="header-nav__menu nav__menu">
 
 							<!-- Menu list -->
-							<ul class="header-nav__menu-list nav__menu-list">
-								<li class="header-nav__menu-item nav__menu-item"><a href="#"
-										class="header-nav__menu-link nav__menu-link">Главная</a></li>
+							<ul class="header-nav__menu-list nav__menu-list" id="menu-list">
 								<li class="header-nav__menu-item nav__menu-item"><a href="#"
 										class="header-nav__menu-link nav__menu-link">Обо мне</a></li>
 								<li class="header-nav__menu-item nav__menu-item"><a href="#"
-										class="header-nav__menu-link nav__menu-link">Мои работы</a></li>
+										class="header-nav__menu-link nav__menu-link">Портфолио</a></li>
 								<li class="header-nav__menu-item nav__menu-item"><a href="#"
-										class="header-nav__menu-link nav__menu-link">Мои услуги</a></li>
+										class="header-nav__menu-link nav__menu-link">Услуги</a></li>
 								<li class="header-nav__menu-item nav__menu-item"><a href="#"
 										class="header-nav__menu-link nav__menu-link">Отзывы</a></li>
 							</ul>
 							<!-- /Menu list -->
-
-							<!-- Burger btn -->
-							<div class="header-nav__menu-burger-btn nav__burger-btn">
-								<i class="header-nav__menu-line"></i>
-								<i class="header-nav__menu-line"></i>
-								<i class="header-nav__menu-line"></i>
-							</div>
-							<!-- /Burger btn -->
 						</div>
-						<!-- /Menu -->
-
-						<!-- Nav contacts -->
-						<div class="header-nav__contact nav__contact">
-							<a href="#" class="btn btn--default header-nav__contact-btn btn-contact">
-								Оставить заявку
-							</a>
+						<!-- Burger btn -->
+						<div class="header-nav__menu-burger-btn nav__burger-btn" id="burger-btn">
+							<i class="header-nav__menu-line"></i>
+							<i class="header-nav__menu-line"></i>
+							<i class="header-nav__menu-line"></i>
 						</div>
-						<!-- /Nav contacts -->
+						<!-- /Burger btn -->
 					</nav>
 					<!-- /Navigation bar -->
 					<div class="header-content">
@@ -91,18 +78,76 @@
 	</header>
 	<!-- /Header -->
 
-	<section class="about-me" id="about-me">
+	<!-- About me -->
+	<section class="about-me section" id="about-me">
 		<div class="container">
-			<h2>Обо мне</h2>
+			<!-- TODO: Инофрмация обо мне и социальные сети -->
+			<!-- section-title -->
+			<div class="section-title about-me-title">
+				<h2 class="section-title__title about-me-title__title">Обо мне</h2>
+				<div class="section-title__line"></div>
+				<p class="section-title__description about-me-title__description">Краткая справка обо мне и моих
+					навыках.</p>
+			</div>
+			<!-- /section-title -->
+			<div class="about-me-content">
+
+			</div>
 		</div>
 	</section>
+	<!-- /About me -->
+
+	<!-- My works -->
+	<section class="works section" id="works">
+		<div class="container">
+			<!-- TODO: Карточки моих работ. Подгрузка с сервера. -->
+			<!-- section-title -->
+			<div class="section-title works-title">
+				<h2 class="section-title__title works-title__title">Портфолио</h2>
+				<div class="section-title__line"></div>
+				<p class="section-title__description works-title__description">Здесь собраны все мои работы за
+					последний год.</p>
+			</div>
+			<!-- /section-title -->
+		</div>
+	</section>
+	<!-- /My works -->
+
+	<!-- Services -->
+	<section class="services section" id="services">
+		<div class="container">
+			<!-- section-title -->
+			<div class="section-title services-title">
+				<h2 class="section-title__title services-title__title">Услуги</h2>
+				<div class="section-title__line"></div>
+				<p class="section-title__description services-title__description">Калькулятор моих услуг.</p>
+			</div>
+			<!-- /section-title -->
+		</div>
+	</section>
+	<!-- /Services -->
+
+	<!-- My reviews -->
+	<section class="reviews section" id="reviews">
+		<div class="container">
+			<!-- section-title -->
+			<div class="section-title reviews-title">
+				<h2 class="section-title__title reviews-title__title">Отзывы</h2>
+				<div class="section-title__line"></div>
+				<p class="section-title__description reviews-title__description">Здесь собраны отзывы всех людей, с
+					которыми я сотрудничал.</p>
+			</div>
+			<!-- /section-title -->
+		</div>
+	</section>
+	<!-- /My reviews -->
 
 	<!-- Footer -->
 	<footer class="footer" id="footer">
 
 		<!-- Container -->
 		<div class="container">
-
+			<h2>Footer</h2>
 		</div>
 		<!-- /Container -->
 
