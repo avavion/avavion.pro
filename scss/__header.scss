@@ -20,9 +20,15 @@
     justify-content: space-between;
     margin-bottom: 150px;
     &__menu {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+      &-list {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+      }
+      &-list--active {
+        display: block !important;
+        animation: FadeIn 1s;
+      }
       &-burger-btn {
         display: none;
       }
@@ -48,43 +54,81 @@
     align-items: center;
     justify-content: center;
     &__title {
-      font-size: 3rem;
+      font-size: 5rem;
       margin-bottom: 10px;
     }
     &__subtitle {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       margin-bottom: 20px;
     }
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
+// Extra small devices (portrait phones, less than 576px)
+
+@media (max-width: 575.98px) {
   :root {
-    --container: 100%;
+    --container: 100vw;
+  }
+  .header {
+    &-content {
+      &__title {
+        font-size: 3rem;
+      }
+      &__subtitle {
+        font-size: 1rem;
+      }
+    }
+    &-nav {
+      &__menu-list {
+        display: none;
+      }
+      &__menu-burger-btn {
+        display: block;
+      }
+    }
   }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
   :root {
     --container: 540px;
   }
-}
 
+  .header {
+    &-content {
+      &__title {
+        font-size: 3.4rem;
+      }
+      &__subtitle {
+        font-size: 1.2rem;
+      }
+    }
+    &-nav {
+      &__menu-list {
+        display: none;
+      }
+      &__menu-burger-btn {
+        display: block;
+      }
+    }
+  }
+}
 // Large devices (desktops, 992px and up)
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   :root {
     --container: 720px;
   }
   .header {
+    &-content {
+      &__title {
+        font-size: 4rem;
+      }
+    }
     &-nav {
       &__menu-list {
         display: none;
-        &--active {
-          display: block;
-          animation: menuOpen 1s;
-        }
       }
       &__menu-burger-btn {
         display: block;

@@ -22,16 +22,18 @@
   --paragraph-color: #ffffff;
 
   --link-color: #ffffff;
-  --link-color--hover: #acacac;
-  --link-color--active: #666666;
+  --link-color--hover: #d6d6d6;
+  --link-color--active: #a3a3a3;
 
-  --button-color: #666666;
-  --button-color--hover: #303030;
-  --button-color--active: #808080;
+  // --button-color: #00a2ff;
+  --button-color: #00a86b;
+  --button-color--hover: #008152;
+  --button-color--active: #006842;
 }
 
 .container {
   max-width: var(--container);
+  // width: var(--container);
   margin: auto;
   padding: 0px 25px;
 }
@@ -57,7 +59,14 @@ p {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--link-color);
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: var(--link-color--hover);
+  }
+  &:active {
+    color: var(--link-color--active);
+  }
 }
 
 ul {
@@ -94,7 +103,10 @@ li {
   }
 }
 
+// TEST
+
 @import "animation.scss";
 @import "__buttons.scss";
 @import "__header.scss";
 @import "__about-me.scss";
+@import "__footer.scss";
