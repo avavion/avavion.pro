@@ -19,6 +19,9 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 150px;
+    &__logo-caption {
+      color: var(--text-color-header);
+    }
     &__menu {
       &-list {
         display: flex;
@@ -56,8 +59,11 @@
     &__title {
       font-size: 5rem;
       margin-bottom: 10px;
+      color: var(--text-color-header);
     }
     &__subtitle {
+      color: var(--text-color-header);
+
       font-size: 1.5rem;
       margin-bottom: 20px;
     }

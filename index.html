@@ -18,6 +18,10 @@
 	<script src="https://kit.fontawesome.com/5c55b6f969.js" crossorigin="anonymous"></script>
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Slick Slider -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 	<title>Алан Богов - веб разработка сайтов с нуля!</title>
 </head>
 
@@ -92,7 +96,21 @@
 			</div>
 			<!-- /section-title -->
 			<div class="about-me-content">
-
+				<div class="about-me-content__profile">
+					<div class="about-me-content__profile-wrap">
+						<img src="assets/img/avatar.jpg" alt="Фотография Алана Богова" class="about-me-content__avatar">
+					</div>
+					<h2 class="about-me-content__name">
+						Алан Богов
+					</h2>
+					<p class="about-me-content__description">
+						Основатель "Веб-разработки с нуля".<br>Занимается веб-разработкой с 2017 года.
+					</p>
+				</div>
+				<div class="about-me-content__skills">
+					<h1>Тута тип скиллы...
+						<br>Пока не придумал что тут должно быть.</h1>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -110,6 +128,56 @@
 					последний год.</p>
 			</div>
 			<!-- /section-title -->
+
+			<!-- Works content -->
+			<div class="works-content">
+
+				<!-- Cards wrappers -->
+				<div class="works-content__cards">
+
+					<!-- Card -->
+					<div class="works-content-card">
+						<img src="assets/img/pharmaboosters.jpg" alt="" class="works-content-card__photo">
+						<h3 class="works-content-card__title">PharmaBoosters</h3>
+						<p class="works-content-card__description">Исправить ошибки JavaScript, исправить стили.
+							Добавить несколько секций и оптимизировать под мобильные устройства.</p>
+						<a href="https://pharmaboosters.com/" class="works-content-card__link"
+							target="_blank">Посмотреть</a>
+					</div>
+					<!-- /Card -->
+
+					<!-- Card -->
+					<div class="works-content-card">
+						<img src="assets/img/photo.jpg" alt="" class="works-content-card__photo">
+						<h3 class="works-content-card__title">Title</h3>
+						<p class="works-content-card__description">Lorem ipsum dolor sit amet consectetur, adipisicing
+							elit. Doloremque, fugit.</p>
+						<a href="#" class="works-content-card__link" target="_blank">Посмотреть</a>
+					</div>
+					<!-- /Card -->
+					
+					<!-- Card -->
+					<div class="works-content-card">
+						<img src="assets/img/photo.jpg" alt="" class="works-content-card__photo">
+						<h3 class="works-content-card__title">Title</h3>
+						<p class="works-content-card__description">Lorem ipsum dolor sit amet consectetur, adipisicing
+							elit. Doloremque, fugit.</p>
+						<a href="#" class="works-content-card__link" target="_blank">Посмотреть</a>
+					</div>
+					<!-- /Card -->
+
+				</div>
+				<!-- /Cards wrappers -->
+
+				<!-- Show more btn -->
+				<div class="works-content__show-card">
+					<button class="btn btn-default" id="btn-show-card">Показать больше...</button>
+				</div>
+				<!-- /Show more btn -->
+
+			</div>
+			<!-- /Works content -->
+
 		</div>
 	</section>
 	<!-- /My works -->
@@ -182,7 +250,12 @@
 	<!-- /Modal -->
 
 	<!-- Scripts -->
+
 	<script src="scripts/main-dist.js"></script>
+	<script src="assets/libs/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript">
 		(function (m, e, t, r, i, k, a) {
@@ -202,6 +275,7 @@
 		<div><img src="https://mc.yandex.ru/watch/56869402" style="position:absolute; left:-9999px;" alt="" /></div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
+
 	<!-- /Scripts -->
 </body>
 

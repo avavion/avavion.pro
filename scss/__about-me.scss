@@ -1,0 +1,30 @@
+.about-me {
+  &-title {
+    margin-bottom: 100px;
+  }
+  &-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &__profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+	  justify-content: center;
+	  text-align: center;
+      &-wrap {
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        margin-bottom: 50px;
+      }
+    }
+    &__avatar {
+      position: relative;
+      top: 0px;
+      right: 50px;
+    }
+  }
+}

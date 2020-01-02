@@ -9,7 +9,7 @@
 
 :root {
   // Sizes
-  --container: 1090px;
+  --container: 1140px;
   --font-regular: 400;
   --font-medium: 500;
   --font-semibold: 600;
@@ -17,9 +17,12 @@
   --font-size: 16px;
 
   // Colors
-  --background-color: #000000;
+  // --background-color: #141414;
+  --background-color: #00050b;
   --heading-color: #ffffff;
-  --paragraph-color: #ffffff;
+  --paragraph-color: #aaaaaa;
+
+  --text-color-header: #ffffff;
 
   --link-color: #ffffff;
   --link-color--hover: #d6d6d6;
@@ -27,7 +30,6 @@
 
   --background-color-footer: #00a86b;
 
-  // --button-color: #00a2ff;
   --button-color: #00a86b;
   --button-color--hover: #008152;
   --button-color--active: #006842;
@@ -35,7 +37,6 @@
 
 .container {
   max-width: var(--container);
-  // width: var(--container);
   margin: auto;
   padding: 0px 25px;
 }
@@ -105,10 +106,9 @@ li {
   }
 }
 
-// TEST
-
 @import "animation.scss";
 @import "__buttons.scss";
 @import "__header.scss";
 @import "__about-me.scss";
+@import "__works.scss";
 @import "__footer.scss";
