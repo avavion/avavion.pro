@@ -7,7 +7,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      &--disable{
+      &--disable {
         display: none;
       }
     }
@@ -32,6 +32,51 @@
       }
       &__description {
         margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+
+@media (max-width: 575.98px) {
+  :root {
+    --container: 100vw;
+  }
+  .works {
+    &-content {
+      &__cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  :root {
+    --container: 540px;
+  }
+  .works {
+    &-content {
+      &__cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 768px) and (max-width: 992px) {
+  :root {
+    --container: 720px;
+  }
+  .works {
+    &-content {
+      &__cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
       }
     }
   }
